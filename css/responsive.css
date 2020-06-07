@@ -1,0 +1,162 @@
+@media screen and (max-width: 1280px) {
+	body, header, footer{
+			width: 100%;
+	}
+	section{
+		margin: 0 8%;
+	}
+	h2::before{
+		top:110%;
+	}
+	.header{
+		width:100%;
+		background-position: 95% 120px;
+	}
+	.header::after, .header::before{
+		width: 100%;
+	}
+	.navigation__item{
+		margin-left: 5%;
+	}
+	.eye-catcher{
+		padding: 50px 10%;
+	}
+	.eye-catcher>p{
+		font-size: 2em;
+	}
+	.home__buttons{
+		width:50%;
+	}
+	.button{
+		padding: 16px 25px;
+		margin-right: 5%;
+	}
+	.home__top{
+		width:75%;
+	}
+	.home__content{
+		width: 40%;
+	}
+	.about-bottom{
+		padding: 0 8%;
+	}
+	.about-bottom>img{
+		width: 70%;
+		margin-top: 20%;
+	}
+	.testimonials:after, .testimonials:before{
+		width: 100%;
+	}
+	.plan-description{
+		font-size: 16px;
+	}
+	.map{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	.header{
+		background-size: 460px 560px;
+		background-position: 110% 180px;	
+	}
+	.home__content{
+	margin-top: 10%;
+	}
+	.home__content>div>a, .home__buttons>a{
+		margin-top: 3%;
+		width: 120px;
+	}
+	.home__description{
+		color: #ffffff;
+	}
+	.features{
+		padding-top: 3%;
+		padding-bottom: 2%;
+	}
+	.features__list{
+		padding-top: 5%;
+	}
+	.feature__item{
+		margin-left: 2%;
+	}
+	.feature__description{
+		color: #000000;
+	}
+	.about-top>img{
+		width: 460px;
+		height: 560px;
+	}
+	.about-top__content{
+		margin-top: 0;
+		margin-left: 1%;
+	}
+	.about-top__description, .about-bottom__description{
+		color: #000000;
+	}
+	.about-bottom{
+		padding: 2% 8%;
+	}
+	.about-bottom__content{
+		margin-top: 2%;
+	}
+	.about-bottom>img{
+		margin-top: 2%;
+	}
+	.testimonials{
+		height: 360px;
+		padding: 0 8%;
+	}
+	.testimonial-item>p{
+		font-size: 16px;
+	}
+	.testimonial_palel{
+		padding-top: 1%;
+	}
+	.eye-catcher{
+		padding: 2% 8%;
+	}
+	.eye-catcher>p{
+		font-size: 1.5em;
+	}
+	.home__buttons{
+		margin: 2% 0 0 2%;
+		width: 50%;
+	}
+	.plan-name{
+		font-size: 20px;
+		padding: 3% 0;
+	}
+	.plan-price{
+		padding: 10% 18% 10%;
+		font-size: 36px;
+	}
+	.pricings{
+		margin-bottom: 2%;
+	}
+	.plan-description{
+		font-size: 14px;
+		padding: 2% 2%;
+		color: #000000;
+	}
+	.plan-description> .button{
+		margin-top: 10%;
+		border-radius: 3px;
+		font-size: 14px;
+	}
+	.contact{
+		padding: 2% 8% 0;
+	}
+	.map{
+		height: 360px;
+	}
+}
