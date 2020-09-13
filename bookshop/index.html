@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homepage | Books</title>
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		@font-face{
+		font-family: 'Segoe WP Light';
+		src: url('fonts/Segoe-wp-light.ttf');
+		}
+		@font-face{
+		font-family: 'Segoe WP';
+		src: url('fonts/SegoeWP.ttf');
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="profile">
+			<div class="container">
+				<div class="profile__items">
+					<a href="#">Sign in</a>
+					<a href="#">My Account</a>
+					<a href="#">Order Status</a>
+					<a href="#">Help</a>
+				</div>
+			</div>
+		</div>
+		<div class="commerce">
+			<div class="container">
+				<div class="commerce__field">
+					<div class="logo">
+						<img src="img/logo.png" alt="Books online">
+					</div>
+					<form class="search f-center" action="#">
+						<input type="text" name="search">
+						<button class="f-center" type="submit"><img src="img/search.png" alt="">Search</button>
+					</form>
+					<div class="cart">
+						<div>
+							<img src="img/basket.png" alt="basket">
+							<span class="basket-name">Your cart</span><span class="count-of-items">(2 items)</span>
+						</div>
+						<div>
+							<span class="price-in-basket">$125.0</span>
+							<a class="checkout" href="#">Checkout</a>
+						</div>
+						
+					</div>
+					<div class="separator"></div>
+					<div class="wish-list">
+						<img src="img/star.png" alt="basket">
+						<div>
+							<span class="wish-list">Wish list</span>
+							<span class="count-of-wishes">20</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="container">
+				<div class="navigation">
+					<a href="#" class="navigation-item">Computers</a>
+					<a href="#" class="navigation-item">Cooking</a>
+					<a href="#" class="navigation-item">Education</a>
+					<a href="#" class="navigation-item">Fiction</a>
+					<a href="#" class="navigation-item">Health</a>
+					<a href="#" class="navigation-item">Mathematics</a>
+					<a href="#" class="navigation-item">Medical</a>
+					<a href="#" class="navigation-item">Reference</a>
+					<a href="#" class="navigation-item">Science</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="promo">	
+				<div class="slider">
+					<div class="slider__wrapper">
+						<div class="slider__item">
+							<div style="background-image: url('img/banner1.png');"></div>
+						</div>
+						<div class="slider__item">
+							<div style="background-image: url('img/banner1.png');"></div>
+						</div>
+						<div class="slider__item">
+							<div style="background-image: url('img/banner1.png');"></div>
+						</div>
+						<div class="slider__item">
+							<div style="background-image: url('img/banner1.png');"></div>
+						</div>
+					</div>
+						<a class="slider__control slider__control_left" href="#" role="button"></a>
+						<a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+				</div>
+				<div class="promo-banner" style="background-image: url('img/banner2.png');">
+				</div>
+			</div>
+			<div class="commerce-block">
+				<div class="categories">
+					<div class="accordion-name">Categories</div>
+					<div class="accordion">
+						<div class="tab">
+							<input type="checkbox" id="tab1" name="tab-group">
+							<label for="tab1" class="tab-title">All</label> 
+							<section class="tab-content">
+							</section> 
+						</div>
+						<div class="tab">
+							<input type="checkbox" id="tab2" name="tab-group">
+							<label for="tab2" class="tab-title">Fiction & Literature</label> 
+							<section class="tab-content">
+								<ul>
+									<li>
+										<a href="#">Children</a>
+									</li>
+									<li>
+										<a href="#">Science Fiction</a>
+									</li>
+									<li>
+										<a href="#">Fantasy</a>
+									</li>
+									<li>
+										<a href="#">Mystery</a>
+									</li>
+									<li>
+										<a href="#">Romance</a>
+									</li>
+									<li>
+										<a href="#">Horror</a>
+									</li>
+									<li>
+										<a href="#">Poetry</a>
+									</li>
+									<li>
+										<a href="#">Literature</a>
+									</li>
+									<li>
+										<a href="#">Crime</a>
+									</li>
+								</ul>
+							</section> 
+						</div>
+						<div class="tab">
+							<input type="checkbox" id="tab3" name="tab-group">
+							<label for="tab3" class="tab-title">Non-Fiction</label> 
+							<section class="tab-content">
+								<ul>
+									<li>
+										<a href="#">Comic</a>
+									</li>
+									<li>
+										<a href="#">Cook</a>
+									</li>
+									<li>
+										<a href="#">Psychology</a>
+									</li>
+									<li>
+										<a href="#">Medical</a>
+									</li>
+									<li>
+										<a href="#">Art</a>
+									</li>
+									<li>
+										<a href="#">Photography</a>
+									</li>
+									<li>
+										<a href="#">Law</a>
+									</li>
+									<li>
+										<a href="#">History</a>
+									</li>
+									<li>
+										<a href="#">Business</a>
+									</li>
+									<li>
+										<a href="#">Computer</a>
+									</li>
+								</ul>
+							</section> 
+						</div>
+						<div class="tab">
+							<input type="checkbox" id="tab4" name="tab-group">
+							<label for="tab4" class="tab-title">Other</label> 
+							<section class="tab-content">
+								<ul>	
+									<li>
+										<a href="#">Baby</a>
+									</li>
+									<li>
+										<a href="#">Sex</a>
+									</li>
+									<li>
+										<a href="#">Travel</a>
+									</li>
+									<li>
+										<a href="#">Science</a>
+									</li>
+									<li>
+										<a href="#">Sports</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="goods">
+					<div class="goods-tabs">
+						<input id="goods-tab1" type="radio" name="goods-tabs" checked>
+						<label for="goods-tab1" title="Вкладка 1">Best sellers</label>
+						<input id="goods-tab2" type="radio" name="goods-tabs">
+						<label for="goods-tab2" title="Вкладка 2">New Arrivals</label>
+						<input id="goods-tab3" type="radio" name="goods-tabs">
+						<label for="goods-tab3" title="Вкладка 3">Used Books</label>
+						<input id="goods-tab4" type="radio" name="goods-tabs">
+						<label for="goods-tab4" title="Вкладка 4">Special Offers</label>
+						<section id="content-tab1">
+							<div class="goods-container">
+								<div class="good-item">
+									<img src="img/book1.png" alt="The war of Art">
+									<p class="good-name">The war of Art</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book2.png" alt="Life What you Make it">
+									<p class="good-name">Life What you Make it</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book3.png" alt="The hare with amber eyes">
+									<p class="good-name">The hare with amber eyes</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book1.png" alt="The war of Art">
+									<p class="good-name">The war of Art</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book2.png" alt="Life What you Make it">
+									<p class="good-name">Life What you Make it</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book3.png" alt="The hare with amber eyes">
+									<p class="good-name">The hare with amber eyes</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book1.png" alt="The war of Art">
+									<p class="good-name">The war of Art</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book2.png" alt="Life What you Make it">
+									<p class="good-name">Life What you Make it</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book3.png" alt="The hare with amber eyes">
+									<p class="good-name">The hare with amber eyes</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book1.png" alt="The war of Art">
+									<p class="good-name">The war of Art</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book2.png" alt="Life What you Make it">
+									<p class="good-name">Life What you Make it</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book3.png" alt="The hare with amber eyes">
+									<p class="good-name">The hare with amber eyes</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book1.png" alt="The war of Art">
+									<p class="good-name">The war of Art</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book2.png" alt="Life What you Make it">
+									<p class="good-name">Life What you Make it</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer"><span>30%</span></br>Off</div>
+								</div>
+								<div class="good-item">
+									<img src="img/book3.png" alt="The hare with amber eyes">
+									<p class="good-name">The hare with amber eyes</p>
+									<p class="good-price">$50</p>
+									<div class="good-offer offer-none"><span>30%</span></br>Off</div>
+								</div>
+							</div>
+						</section>  
+						<section id="content-tab2">
+							<p>
+							  Здесь размещаете любое содержание....
+							</p>
+						</section> 
+						<section id="content-tab3">
+							<p>
+							  Здесь размещаете любое содержание....
+							</p>
+						</section> 
+						<section id="content-tab4">
+							<p>
+							  Здесь размещаете любое содержание....
+							</p>
+						</section>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="populars-field">
+			<div class="container">
+				<div class="populars">
+					<div class="pop-item">
+						<p class="pop-title">Biography & True Stories</p>
+						<ul class="pop-list">
+							<li><a href="#">General</a></li>
+							<li><a href="#">True Stories</a></li>
+							<li><a href="#">Generic Exams</a></li>
+							<li><a href="#">GK Titles</a></li>
+							<li><a href="#">Medical Entrance</a></li>
+							<li><a href="#">Other Entrance Exams</a></li>
+							<li><a href="#">Self-help Titles</a></li>
+							<li><a href="#">Sociology</a></li>
+							<li><a href="#">Memoirs</a></li>
+							<li><a href="#">Diaries, Letters & Journals</a></li>
+						</ul>
+					</div>
+					<div class="pop-item">
+						<p class="pop-title">Professional & Reference</p>
+						<ul class="pop-list">
+							<li><a href="#">Business Trade</a></li>
+							<li><a href="#">Academic and Reference</a></li>
+							<li><a href="#">Engineering and Computer Science</a></li>
+							<li><a href="#">Introduction to Computers</a></li>
+							<li><a href="#">Science and Maths</a></li>
+							<li><a href="#">Trade Business</a></li>
+							<li><a href="#">English Language & Literature</a></li>
+							<li><a href="#">English Language Teaching</a></li>
+							<li><a href="#">Environment Awareness</a></li>
+							<li><a href="#">Environment Protection</a></li>
+						</ul>
+					</div>
+					<div class="pop-item">
+						<p class="pop-title">Earth Sciences</p>
+						<ul class="pop-list">
+							<li><a href="#">Earth Sciences</a></li>
+							<li><a href="#">Geography</a></li>
+							<li><a href="#">The Environment</a></li>
+							<li><a href="#">Regional & Area Planning</a></li>
+							<li><a href="#">Fantasy</a></li>
+							<li><a href="#">Humorous</a></li>
+							<li><a href="#">Interactive</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Environment Awareness</a></li>
+							<li><a href="#">Environment Protection</a></li>
+						</ul>
+					</div>
+					<div class="pop-item">
+						<p class="pop-title">Mathematics</p>
+						<ul class="pop-list">
+							<li><a href="#">Mathematics</a></li>
+							<li><a href="#">Algebra</a></li>
+							<li><a href="#">Differencial Equations</a></li>
+							<li><a href="#">Discrete Mathematics</a></li>
+							<li><a href="#">Fourier Analysis</a></li>
+							<li><a href="#">Numerical Analysis</a></li>
+							<li><a href="#">Probability</a></li>
+							<li><a href="#">Topology</a></li>
+							<li><a href="#">Statistics</a></li>
+							<li><a href="#">Statistical Methods</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-block">
+			<div class="container">
+				<p class="cards-info">We accept all major Credit Card/Debit Card/Internet Banking</p>
+				<div class="cards">
+					<img src="img/mastercard.png">
+					<img src="img/american.png">
+					<img src="img/visa.png">
+				</div>
+			</div>
+			<div class="footer-separator"></div>
+			<div class="container">
+				<p class="copyright">Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		'use strict';
+		var multiItemSlider = (function () {
+			return function (selector, config) {
+		var
+			_mainElement = document.querySelector(selector), // основный элемент блока
+			_sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+			_sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+			_sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+			_sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+			_sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+			_wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+			_itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента	
+			_positionLeftItem = 0, // позиция левого активного элемента
+			_transform = 0, // значение транфсофрмации .slider_wrapper
+			_step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+			_items = []; // массив элементов
+		// наполнение массива _items
+		_sliderItems.forEach(function (item, index) {
+			_items.push({ item: item, position: index, transform: 0 });
+		});
+
+		var position = {
+			getMin: 0,
+			getMax: _items.length - 1,
+		}
+
+		var _transformItem = function (direction) {
+			if (direction === 'right') {
+		if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+			return;
+		}
+		if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+			_sliderControlLeft.classList.add('slider__control_show');
+		}
+		if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+			_sliderControlRight.classList.remove('slider__control_show');
+		}
+		_positionLeftItem++;
+		_transform -= _step;
+			}
+			if (direction === 'left') {
+		if (_positionLeftItem <= position.getMin) {
+			return;
+		}
+		if (!_sliderControlRight.classList.contains('slider__control_show')) {
+			_sliderControlRight.classList.add('slider__control_show');
+		}
+		if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+			_sliderControlLeft.classList.remove('slider__control_show');
+		}
+		_positionLeftItem--;
+		_transform += _step;
+			}
+			_sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+		}
+
+		// обработчик события click для кнопок "назад" и "вперед"
+		var _controlClick = function (e) {
+			if (e.target.classList.contains('slider__control')) {
+		e.preventDefault();
+		var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+		_transformItem(direction);
+			}
+		};
+
+		var _setUpListeners = function () {
+			// добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+			_sliderControls.forEach(function (item) {
+		item.addEventListener('click', _controlClick);
+			});
+		}
+
+		// инициализация
+		_setUpListeners();
+
+		return {
+			right: function () { // метод right
+		_transformItem('right');
+			},
+			left: function () { // метод left
+		_transformItem('left');
+			}
+		}
+
+			}
+		}());
+
+		var slider = multiItemSlider('.slider')
+
+	</script>
+</body>
+</html>

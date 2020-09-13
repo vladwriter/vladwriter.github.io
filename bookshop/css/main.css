@@ -1,0 +1,455 @@
+/*Basic rules*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe WP Light";
+}
+a{
+	text-decoration: none;
+}
+.f-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*Header*/
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	background-color: #fff;
+	top: 0;
+}
+main{
+	position: relative;
+	top: 180px;
+}
+.profile__items>a{
+	color: #f2f2f2;
+	padding-left: 25px;
+}
+.profile__items>a:hover{
+	color: #79b260;
+}
+.container{
+	margin: 0 11%;
+}
+.profile{
+	height: 30px;
+	background-color: #424242;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.commerce{
+	background: linear-gradient( #ffffff, #ebebeb);
+	
+}
+.commerce__field{
+	height: 110px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	width: 460px;
+	border: 4px solid #79b260;
+	border-radius: 3px;
+	min-height: 40px;
+}
+input[type="text"] {
+	border: none;
+	outline: none;
+	width: 330px;
+	min-height: 35px;
+	vertical-align: middle;
+}
+button[type="submit"] {
+	width: 130px;
+	height: 35px;
+	border: none;
+	outline: none;
+	color: #f2f2f2;
+	text-indent: 0.5em;
+	font-size: 23px;
+	font-family: "Segoe WP";
+	background: url(img/search.png) no-repeat, #79b260;
+}
+.cart>div:last-child{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.basket-name, .wish-list{
+	font-family: "Segoe WP";
+	font-size: 23px;
+	color: #6d6d6d;
+}
+.count-of-items{
+	font-family: "Segoe WP";
+	font-size: 13px;
+	color: #6d6d6d;
+	display: inline-block;
+	text-indent: 0.5em;
+}
+.price-in-basket{
+	font-family: "Segoe WP";
+	font-weight: 700;
+	font-size: 27px;
+	color: #6d6d6d;
+}
+.checkout{
+	padding: 4px 6px;
+	border-radius: 4px;
+	color: #ffffff;
+	font-family: "Segoe WP";
+	font-size: 15px;
+	background: linear-gradient(#414141, #252525);
+}
+.separator{
+	height: 64%;
+	width: 1px;
+	background-color: #c1c1c1;
+	margin-left: -3%;
+}
+.wish-list{
+	text-align: center;
+}
+.wish-list>div{
+	display: flex;
+	align-items: flex-start;
+}
+.count-of-wishes{
+	font-size: 13px;
+	color: #ffffff;
+	padding: 0 5px;
+	border-radius: 10px;
+	background-color: #79b260;
+}
+nav{
+	height: 40px;
+	border-top: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+}
+.navigation{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navigation-item{
+	font-family: "Segoe WP";
+	font-size: 19px;
+	color: #7c7c7c;
+	padding: 0.35em 0.9em;
+	overflow: hidden;
+}
+.navigation-item:hover{
+	background-color: #79b260;
+	color: #fff;
+}
+/*Promo field*/
+.promo{
+	height:305px;
+	margin: 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+ .slider {
+	position: relative;
+	overflow: hidden;
+	width: 71.5%;
+}
+.slider__wrapper {
+	display: flex;
+	transition: transform 0.6s ease;
+}
+.slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.slider__control {
+	position: absolute;
+	top: 50%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	color: #fff;
+	text-align: center;
+	opacity: 0.5;
+	height: 50px;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, .5);
+}
+.slider__control_show {
+	display: flex;
+}
+.slider__control:hover,
+.slider__control:focus {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	opacity: .9;
+}
+.slider__control_left {
+	left: 0;
+}
+.slider__control_right {
+	right: 0;
+}
+.slider__control::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+.slider__control_left::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.slider__control_right::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.promo-banner, .slider__item>div{
+	height: 304px; background-size: cover;
+}
+.promo-banner{
+	width:27%;
+	margin-left: 1,5%;
+}
+.commerce-block{
+	display: flex;
+	justify-content: space-between;
+}
+/*Categories*/
+.categories{
+	width: 190px;
+}
+.accordion-name{
+	font-size: 25px;
+	border: 1px solid #d6d6d6;
+	padding: 10px 0 10px 25px;
+}
+/*Accordion style*/
+.tab input, .tab-content { display: none; }
+.tab {
+	font: 16px 'Segoe WP';
+	border-left: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+	color: #464646;
+}
+.tab:last-child{
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 25%;
+}
+.tab-title {
+	padding: 10px;
+	display: block;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 17px;
+	padding: 10px 25px;
+}
+.tab-content {
+	padding: 10px 25px;
+}
+.tab :checked + .tab-title {
+	background-color: #86c56a;
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+	font-size: 17px;
+	padding: 10px 25px;
+}
+.tab :checked ~ .tab-content {
+	display: block;
+}
+.tab-content>ul{
+	list-style-type: none;	
+}
+.tab-content>ul>li>a{
+	color: #464646;
+	font-family: 'Segoe WP';
+	font-size: 15px;
+	border-bottom: 1px solid #d6d6d6;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+/* Goods container */
+.goods-tabs {
+	width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.goods-tabs>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.goods-tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-name: fadeIn;
+} 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.goods-tabs>input {
+	display: none;
+	position: absolute;
+}
+.goods-tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.goods-tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.goods-tabs>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#goods-tab1:checked~#content-tab1, #goods-tab2:checked~#content-tab2, #goods-tab3:checked~#content-tab3, #goods-tab4:checked~#content-tab4 {
+	display: block;
+}
+@media screen and (max-width: 680px) {
+	.goods-tabs>label {
+		font-size: 0;
+	}
+	.goods-tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.goods-tabs>label {
+		padding: 15px;
+	}
+}
+/*Goods container */
+.goods-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-bottom: 10%;
+}
+.good-item{
+	position: relative;
+	max-width: 130px;
+	max-height: 250px;
+	text-align: center;
+}
+.good-item>img:hover{
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.good-name{
+	margin-top: -5px;
+	font-size: 17px;
+	font-weight: 700;
+
+}
+.good-price{
+	color: #f05356;
+	font: 19px 'Segoe WP';
+	font-weight: 700;
+}
+.good-offer{
+	position: absolute;
+	text-align: center;
+	padding-top: 7px;
+	width: 50px;
+	height: 50px;
+	top: 1px;
+	right: 5px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #f05356;
+	border-radius: 50%;
+}
+.good-offer>span{
+	font-weight: 700;
+}
+.offer-none{
+	display: none;
+}
+/* Footer */
+footer{
+	position: relative;
+	top: 180px;
+}
+.populars-field{
+	background-color: #414642;
+}
+.populars{
+	display: flex;
+	justify-content: space-between;
+}
+.pop-item{
+	margin-bottom: 30px;
+}
+.pop-title{
+	margin: 20px 0;
+	font-size: 20px;
+	color: #dddddd;
+}
+.pop-list>li{
+	list-style-type: none;
+}
+.pop-list>li>a{
+	box-sizing: content-box;
+	white-space: nowrap;
+	font-size: 14px;
+	color: #afb0ad;
+	border-bottom: 1px solid #4f5854;
+	display: inline-block;
+	width: 170px;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+}
+.footer-block{
+	background-color: #342f30;
+	color: #d2d2d1;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.cards-info{
+	padding: 30px 0 10px;
+	font-size: 20px;
+}
+.footer-separator{
+	width: 100%;
+	height: 1px;
+	background-color: #565355;
+	margin: 10px 0 15px;
+}
